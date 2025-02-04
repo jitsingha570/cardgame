@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breck Card Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Breck Card Game: Score Manager</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Player</th>
+        <th>Round 1 Call</th>
+        <th>Round 1 Points</th>
+        <th>Round 2 Call</th>
+        <th>Round 2 Points</th>
+        <th>Round 3 Call</th>
+        <th>Round 3 Points</th>
+        <th>Round 4 Call</th>
+        <th>Round 4 Points</th>
+        <th>Total Points</th>
+      </tr>
+    </thead>
+    <tbody id="scoreTable">
+      <!-- Rows will be dynamically added -->
+    </tbody>
+  </table>
+  <button class="btn" onclick="calculateScores()">Calculate Winner</button>
+  <p class="winner" id="winnerDisplay"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
